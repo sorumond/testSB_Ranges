@@ -113,53 +113,52 @@ class Ranges {
 }
 
 const r = new Ranges();
-console.log("r.add([1, 4])");
+
 r.add([1, 4]);
 r.print();
-console.log("______");
+
 // Should display: [1, 4]
-console.log("r.add([10, 20])");
+
 r.add([10, 20]);
 r.print();
-console.log("______");
+
 // Should display: [1, 4] [10, 20]
-console.log("r.add([10, 10])");
+
 r.add([10, 10]);
 r.print();
-console.log("______");
+
 // Should display: [1, 4] [10, 20]
-console.log("r.add([21, 21])");
+
 r.add([21, 21]);
 r.print();
-console.log("______");
+
 // Should display: [1, 4] [10, 21]
-console.log("r.add([2, 4])");
+
 r.add([2, 4]);
 r.print();
-console.log("______");
+
 // Should display: [1, 4] [10, 21]
-console.log("r.add([3, 8])");
+
 r.add([3, 8]);
 r.print();
-console.log("______");
+
 // Should display: [1, 8] [10, 21]
-console.log("r.remove([10, 10])");
+
 r.remove([10, 10]);
 r.print();
-console.log("______");
+
 // Should display: [1, 8] [11, 21]
-console.log("r.remove([10, 11])");
+
 r.remove([10, 11]);
 r.print();
-console.log("______");
+
 // Should display: [1, 8] [12, 21]
-console.log("r.remove([15, 17])");
+
 r.remove([15, 17]);
 r.print();
-console.log("______");
+
 // Should display: [1, 8] [12, 14] [18, 21]
-console.log("r.remove([3, 19])");
 r.remove([3, 19]);
 r.print();
-console.log("______");
 // Should display: [1, 2] [20, 21]
+
